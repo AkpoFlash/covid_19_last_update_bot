@@ -14,7 +14,9 @@ const executeCommand = async (command, params) => {
 
 const prettifyCountryResult = (data) => {
   const isDataEmpty =
-    !data.latest_stat_by_country || !data.latest_stat_by_country.length;
+    !data ||
+    !data.latest_stat_by_country ||
+    !data.latest_stat_by_country.length;
 
   if (isDataEmpty) {
     return null;
