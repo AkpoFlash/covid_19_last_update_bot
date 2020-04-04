@@ -1,0 +1,35 @@
+{
+  "name": "covid_19_last_update_bot",
+  "version": "1.0.0",
+  "description": "This bot has the last update of COVID-19 cases for each country",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkpoFlash/covid_19_last_update_bot.git"
+  },
+  "keywords": [
+    "covid-19",
+    "statistic",
+    "coronavirus",
+    "disease"
+  ],
+  "author": "Kirill Anisimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkpoFlash/covid_19_last_update_bot/issues"
+  },
+  "homepage": "https://github.com/AkpoFlash/covid_19_last_update_bot#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2"
+  }
+}
