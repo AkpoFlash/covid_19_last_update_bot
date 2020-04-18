@@ -1,0 +1,26 @@
+name: CI-CD-Pipeline-to-AWS
+env:
+  S3_BUCKET_NAME: "akpoflash-github-actions"
+  EB_APP_NAME: "MyGithubActions"
+  EB_ENV_NAME: "MyGithubActions-env"
+  DEPLOY_FILE: "covid_app_${{ github.sha }}.zip"
+  AWS_REGION_NAME: "us-east-2"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  job_ci:
+    runs-on: [ubuntu-latest]
+
+    steps:
+    - name: Clone our git repo
+      uses: actions/checkout@v1
+
+    - name: Create ZIP
+      run: zip -r ${{ env.DEPLOY_FILE }} ./ -x *.git*
+
+      
