@@ -1,11 +1,11 @@
 # COVID-19 Last Update Telegram Bot
 
-## This bot has the last update of COVID-19 cases for each country
+## This telegram bot has the last update of COVID-19 cases for each country
 
 
 ### How to use:
 
- 1. Find @covid_19_last_update_bot in Telegram
+ 1. First you need to find @covid_19_last_update_bot in Telegram
  2. For total cases send <code>/total</code> message
  3. For cases for country send <code>/country {country_name}</code>
  
